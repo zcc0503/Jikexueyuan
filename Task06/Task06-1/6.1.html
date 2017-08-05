@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>高级计算器</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<!--输出标签-->
+		<div class="content">
+			<input type="text" id="count" />
+			<!--输出按钮-->
+			<div class="partn">
+				<div id="part1">
+					<button onclick="showInput('7','')">7</button>
+					<button onclick="showInput('8','');">8</button>
+					<button onclick="showInput('9','');">9</button>
+					<button onclick="showInput('','/');">/</button>
+				</div>
+				<div id="part1=2">
+					<button onclick="showInput('4','');">4</button>
+					<button onclick="showInput('5','');">5</button>
+					<button onclick="showInput('6','');">6</button>
+					<button onclick="showInput('','*');">*</button>
+				</div>
+				<div id="part3">
+					<button onclick="showInput('1','');">1</button>
+					<button onclick="showInput('2','');">2</button>
+					<button onclick="showInput('3','');">3</button>
+					<button onclick="showInput('','-');">-</button>
+				</div>
+				<div id="part4">
+					<button onclick="showInput('0','');">0</button>
+					<button onclick="cleanInput();">c</button>
+					<button onclick="showInput('.','');"><b>.</b></button>
+					<button onclick="showInput('','+');">+</button>
+				</div>
+				<div id="part5">
+					<button onclick="showSinResult('sin');">sin</button>
+					<button onclick="showSinResult('cos');">cos</button>
+					<button onclick="showSinResult('tan');">tan</button>
+					<button onclick="showResult();">=</button>
+				</div>
+			</div>
+		</div>
+	</head>
+
+	<body>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+
+</html>

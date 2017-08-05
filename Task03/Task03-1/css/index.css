@@ -1,0 +1,135 @@
+.view {
+	margin: -60px auto;
+	background-color: #eee;
+	width: 800px;
+	height: 800px;
+	position: relative;
+	border-radius: 20px;
+	transform: scale(0.7);
+}
+
+.box {
+	animation-name: myRotate;
+	animation-duration: 8s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	transform-origin: 400px 400px 0;
+	transform-style: preserve-3d;
+}
+
+.box .common {
+	height: 330px;
+	width: 330px;
+	position: absolute;
+	top: 235px;
+	left: 235px;
+	border: 2px solid black;
+	text-align: center;
+	font-size: 130px;
+}
+
+.one div,
+.two div,
+.three div,
+.four div,
+.five div,
+.six div {
+	height: 100px;
+	width: 100px;
+	display: inline-block;
+	border: 3px solid gray;
+	position: absolute;
+}
+
+@keyframes myRotate {
+	16% {
+		transform: rotateY(-90deg) rotateZ(135deg);
+	}
+	33% {
+		transform: rotateY(-90deg) rotateX(135deg);
+	}
+	50% {
+		transform: rotateY(225deg) rotateZ(135deg);
+	}
+	66% {
+		transform: rotateY(135deg) rotateX(135deg);
+	}
+	83% {
+		transform: rotateX(135deg);
+	}
+}
+
+.one {
+	background-color: red;
+	transform: rotateX(-90deg) translateZ(165px);
+}
+
+.two {
+	 background-color: blue;
+	transform: rotateX(0deg) translateZ(165px);
+}
+
+.three {
+	background-color: green;
+	transform: rotateX(90deg) translateZ(165px);
+}
+
+.four {
+	background-color: white;
+	transform: rotateY(90deg) translateZ(165px);
+}
+
+.five {
+	background-color: orange;
+	transform: rotateY(-90deg) translateZ(165px);
+}
+
+.six {
+	background-color: yellow;
+	transform: rotateX(-180deg) translateZ(165px);
+}
+
+#A {
+	left: 0px;
+	top: 0px;
+}
+
+#B {
+	left: 110px;
+	top: 0px;
+}
+
+#C {
+	left: 220px;
+	top: 0px;
+}
+
+#D {
+	left: 0px;
+	top: 110px;
+}
+
+#E {
+	left: 110px;
+	top: 110px;
+}
+
+#F {
+	left: 220px;
+	top: 110px;
+}
+
+#G {
+	left: 0px;
+	top: 220px;
+}
+
+#H {
+	left: 110px;
+	top: 220px;
+}
+
+#I {
+	left: 220px;
+	top: 220px;
+}

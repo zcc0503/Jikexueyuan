@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>学生成绩等级</title>
+	</head>
+
+	<body>
+		<input type="text" id="resulit" />
+		<button onclick="grade()">等级</button>
+		<script type="text/javascript">
+			function grade() {
+				var stutend = document.getElementById("resulit").value
+				if(stutend <= 100 && stutend > 90) {
+					alert("十等生")
+				} else if(stutend <= 90 && stutend > 80) {
+					alert("九等生")
+				}
+			}
+		</script>
+
+	</body>
+
+</html>

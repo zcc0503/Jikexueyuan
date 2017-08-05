@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>计算器</title>
+		<link type="text/css" href="css/index.css" rel="stylesheet" />
+	</head>
+
+	<body>
+
+		<div align="center" class="content">
+			<!--输出文本框-->
+			<div class="part1">
+				<input type="text" name="count" id="count" value="0" readonly />
+			</div>
+			<!--输出按钮-->
+			<div class="part1">
+				<button onclick="showInput('7','');">7</button>
+				<button onclick="showInput('8','');">8</button>
+				<button onclick="showInput('9','');">9</button>
+				<button onclick="showInput('','+');">+</button>
+			</div>
+			<div class="part2">
+				<button onclick="showInput('4','');">4</button>
+				<button onclick="showInput('5','');">5</button>
+				<button onclick="showInput('6','');">6</button>
+				<button onclick="showInput('','-');">-</button>
+			</div>
+			<div class="part3">
+				<button onclick="showInput('1','');">1</button>
+				<button onclick="showInput('2','');">2</button>
+				<button onclick="showInput('3','');">3</button>
+				<button onclick="showInput('','*');">*</button>
+			</div>
+			<div class="part4">
+				<button onclick="showInput('0','');">0</button>
+				<button onclick="cleanInput();">C</button>
+				<button onclick="showInput('','/');">/</button>
+				<button onclick="showResult();">=</button>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var userInput = "";
+			var jsfs = ""; //计算方式
+			var flag = false;
+			//输出按钮
+			function showInput(inputNum, inputJsfs) {
+				if(flag) {
+					userInput = "";
+				}
+				flag = false;
+
+				if(inputJsfs != "") {
+					jsfs = inputJsfs;
+				}
+
+				userInput += inputNum + inputJsfs;
+				document.getElementById("count").value = userInput;
+			}
+
+			//清空按钮
+			function cleanInput() {
+				userInput = "";
+				document.getElementById("count").value = "0";
+			}
+
+			//计算结果
+			function showResult() {
+				flag = true;
+				var value = document.getElementById("count").value;
+
+				if(value == "0") {
+					alert("输入数字！");
+				}
+
+				if(jsfs == "/" && value.split("/")[1] == 0) {
+					alert("分母不能为0！");
+					document.getElementById("count").val("0");
+					return;
+				}
+
+				var result = "0";
+				var num1 = userInput.split(jsfs)[0];
+				var num2 = userInput.split(jsfs)[1];
+
+				if(num2 == null || num2 == "") {
+					alert("请输入第二个数字！");
+				}
+
+				switch(jsfs) {
+					case "+":
+						result = num1 + num2;
+						break;
+					case "-":
+						result = num1 - num2;
+						break;
+					case "*":
+						result = num1 * num2;
+						break;
+					case "/":
+						result = num1 / num2;
+						break;
+					default:
+						break;
+				}
+
+				document.getElementById("count").value = result;
+			}
+		</script>
+	</body>
+
+</html>

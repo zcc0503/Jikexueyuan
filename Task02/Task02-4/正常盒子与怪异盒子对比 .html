@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>正常盒子与怪异盒子</title>
+		<style type="text/css">
+			.daizi {
+				margin: 0px;
+				padding: 0px;
+				width: 130px;
+				height: 130px;
+				margin: 100px;
+			}
+			
+			.xiezi {
+				width: 100px;
+				height: 100px;
+				background-color: coral;
+			}
+			
+			.xiehe {
+				width: 100px;
+				height: 100px;
+				background-color: lightgray;
+				margin-left: 100px;
+				margin-top: 100px;
+				padding: 10px;
+				border: 5px solid red;
+				box-width: 5px;
+			}
+			
+			.xiezi1 {
+				width: 100px;
+				height: 100px;
+				background-color: darkmagenta;
+			}
+			
+			.xiehe1 {
+				width: 130px;
+				height: 130px;
+				background-color: thistle;
+				margin-left: 200px;
+				margin-top: 100px;
+				padding: 10px;
+				border: 5px solid red;
+				box-sizing: border-box;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="daizi">
+			<div class="con xiehe">
+				<div class="con xiezi">
+					鞋子
+				</div>
+			</div>
+		</div>
+	</body>
+	<hr />
+	<div class="con xiehe1">
+		<div class="con xiezi1">
+			怪异的盒子
+		</div>
+	</div>
+
+</html>

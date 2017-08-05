@@ -1,0 +1,351 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+}
+
+.navRight {
+	position: relative;
+	height: 34px;
+	float: right;
+	color: black;
+	line-height: 34px;
+	font-size: 13px;
+	text-align: left;
+}
+
+.navRight a:hover {
+	color: black;
+}
+
+html {
+	overflow-y: auto;
+	height: 100%;
+	display: block;
+}
+
+
+/*尾部*/
+
+.footer {
+	text-align: center;
+	width: 100%;
+	margin-top: 50px;
+}
+
+.blackNav {
+	color: black;
+	margin-left: 10px;
+}
+
+.normalNav {
+	color: black;
+	margin-left: 10px;
+	margin-right: 5px
+}
+
+
+/*中部*/
+
+.content {
+	height: 100%;
+	font: 12 arial;
+	position: relative;
+	display: block;
+}
+
+.div-header {
+	height: 187px;
+	position: relative;
+	top: 16%;
+	text-align: center;
+	display: block;
+}
+
+.div-content {
+	margin: 0px auto;
+	position: relative;
+	width: 640px;
+	height: 187px;
+}
+
+
+/*输入框和button的集合*/
+
+.div-bor {
+	width: 640px;
+	height: 36px;
+	position: relative;
+	margin-top: 22px;
+	vertical-align: center;
+}
+
+
+/** 输入框中的相机图标 */
+
+.icon-camaro {
+	position: absolute;
+	background-image: url(../img/camaro.png);
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+	right: 5px;
+	top: 10px;
+	outline: 0px;
+}
+
+
+/*百度搜索输入框*/
+
+.div-input-bor {
+	width: 539px;
+	height: 36px;
+	border: 1px solid #b6b6b6;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+}
+
+
+/*输入框*/
+
+#input_baidu {
+	width: 500px;
+	height: 22px;
+	margin: 6px 0 0 7px;
+	border: 0px;
+	outline: 0px;
+	line-height: 22px;
+	padding: 0px;
+	text-align: left;
+	list-style: none;
+	background: transparent;
+}
+
+
+/*百度一下按钮*/
+
+.div-button-bor {
+	height: 36px;
+	width: 100px;
+	position: absolute;
+	left: 539px;
+	outline: none;
+	outline-style: none;
+	nav-index: auto;
+	bottom: 0px;
+	border: 0px;
+	padding: 0px;
+	list-style: outside none none;
+	text-align: left;
+	background-image: none;
+	vertical-align: top;
+}
+
+
+/*百度一下按钮*/
+
+#btn_baidu {
+	height: 36px;
+	width: 100px;
+	color: #FFF;
+	font-size: 15px;
+	background: #3385FF;
+	border: 0;
+	border-bottom: 1px solid #2d78f4;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	outline: none;
+	outline-style: none;
+	nav-index: auto;
+}
+
+#footer01 {
+	margin-top: 10px;
+	font: 12px arial;
+}
+
+#footer02 {
+	font: 12px arial;
+	margin-top: 5px;
+	color: #666;
+}
+
+a:hover {
+	color: #0000FF;
+}
+
+.morenav {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	line-height: 23px;
+	color: white;
+	margin-left: 19px;
+	margin-right: 2px;
+}
+
+.morebar {
+	display: none;
+	position: fixed;
+	right: 0px;
+	top: 0px;
+	width: 85px;
+	height: 100%;
+	background-color: #f9f9f9;
+	border-left: 1px solid #e7e7e7;
+	z-index: 500;
+}
+
+.moretxt {
+	position: relative;
+	background-color: #38f;
+	width: 60px;
+	height: 22px;
+	display: block;
+	right: 10px;
+	z-index: 600;
+}
+
+.morenav:hover {
+	color: black;
+}
+
+.moretxt:hover {
+	background-color: #f9f9f9;
+}
+
+.morenav:hover .morebar {
+	display: block;
+}
+
+.ccNullBox {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	width: 66px;
+	height: 30px;
+	border-bottom: 1px solid #f0f0f0;
+	line-height: 30px;
+}
+
+.ccBox {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	width: 66px;
+	height: 76px;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.ccimg:hover {
+	color: #666;
+	text-decoration: underline;
+}
+
+.ccimg {
+	display: block;
+	color: #666;
+	text-decoration: none;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.ccimg img {
+	margin: 5px auto 5px;
+}
+
+.weather {
+	position: relative;
+	float: left;
+	top: 0px;
+	font-size: 13px;
+	width: 210px;
+	height: 34px;
+}
+
+.weatherLocal {
+	width: 200px;
+	height: 34px;
+}
+
+.nav {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 100%;
+	margin-top: 3px;
+	margin-bottom: 150px;
+	white-space: nowrap;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.navLeft {
+	float: left;
+	width: 320px;
+	color: black;
+	font-size: 13px;
+}
+
+.goods {
+	position: relative;
+}
+
+.left3item {
+	position: relative;
+	display: inline-block;
+	float: left;
+	line-height: 34px;
+	color: black;
+	margin-left: -15px;
+}
+
+.weather_city {
+	margin-left: 15px;
+	line-height: 34px;
+	color: #333;
+}
+
+.weather_state {
+	color: #38f;
+}
+
+.weather_exp {
+	color: #38f;
+}
+
+.imgBox {
+	position: absolute;
+	width: 425px;
+	display: none;
+}
+
+.weather_img {
+	display: inline-block;
+	position: relative;
+	top: 2px;
+	width: 18px;
+	height: 18px;
+	background: url(../img/a1.jpg) no-repeat;
+	background-size: 18px 18px;
+}
+
+.saoma1 {
+	width: 100%;
+	text-align: center;
+}
+
+
+/*推荐*/
+
+#con_bdtab_2 img {
+	margin-left: 100px;
+}

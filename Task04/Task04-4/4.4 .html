@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<style>
+			.content{
+				font:18px arial;
+				margin: 10px 10px;
+			}
+		</style>
+		<title>HTML5+CSS3常见面试题目</title>
+		<center class="content"><h1>HTML5+CSS3常见面试题目</h1></center>
+	</head>
+	<body>
+<b>1.SGML（标准通用标记语言）和HTML（超文本标记语言），XML（可扩展标记语言）和HTML的之间有什么关系？</b><br/>               
+ SGML（标准通用标记语言）是一个标准，告诉我们怎么去指定文档标记。他是只描述文档标记应该是怎么样的元语言，HTML是被
+    用SGML描述的标记语言。因此利用SGML创建了HTML参照和必须共同遵守的DTD，你会经常在HTML页面的头部发现“DOCTYPE”属性，用来定义用于
+    解析目标DTD
+ <!DOCTYPE htmlPUBLIC "-//W3C//DTD HTML 4.01//EN""http://www.w3.org/TR/html4/strict.dtd">
+现在解析SGML是一件痛苦的事情，所以创建了XML使事情更好。XML使用了SGML，例如：在SGML中你必须使用起始和结束标签，但是在XML你可以有自动关闭的结束标签。
+XHTML创建于XML，他被使用在HTML4.0中。你可以参考下面代码片段中展示的XML DTD
+总之，SGML是所有类型的父类，较旧的HTML利用SGML，HTML4.0使用派生自XML的XHTML。<br />
+<b>2.什么是HTML5？</b><br />
+Html5是最新的HTML标准，他的主要目标是提供所有内容而不需要任何的像flash，silverlight等的额外插件，这些内容来自动画，视频，富GUI等
+HTML5是万维网联盟（W3C）和网络超文本应用技术工作组（WHATWG）之间合作输出的。<br />
+<b>3.为什么HTML5里面我们不需要DTD（Document Type Definition文档类型定义）？如果我不放入<! DOCTYPE html>标签，HTML5还会工作么？</b><br />
+HTML5没有使用SGML或者XHTML，他是一个全新的东西，因此你不需要参考DTD，对于HTML5，你仅需放置下面的文档类型代码告诉浏览器识别这是HTML5文档
+不会，浏览器将不能识别他是HTML文档，同时HTML5的标签将不能正常工作。<br />
+<b>4.哪些浏览器支持HTML5？</b><br />
+几乎所有的浏览器Safari，Chrome，Firefox，Opera，IE都支持HTML5。<br />
+<b>5.HTML5的页面结构同HTML4或者更前的HTML有什么区别？</b><br />
+ 一个典型的WEB页面包含头部，脚部，导航，中心区域，侧边栏。现在如果我们想在在HTML4的HTML区域中呈现这些内容，我们可能要使用DIV标签。
+但是在HTML5中通过为这些区域创建元素名称使他们更加清晰，也使得你的HTML更加可读以下是形成页面结构的HTML5元素的更多细节：
+<header>：代表HTML的头部数据<br />
+<footer>：页面的脚部区域<br />
+<nav>：页面导航元素<br />
+<article>：自包含的内容<br />
+<section>：使用内部article去定义区域或者把分组内容放到区域里<br />
+<aside>：代表页面的侧边栏内容<br />
+<b>6.什么是SVG（Scalable Vector Graphics可缩放矢量图形）？</b><br />
+SVG（Scalable Vector Graphics可缩放矢量图形）表示可缩放矢量图形。他是基于文本的图形语言，使用文本，线条，点等来进行图像绘制，这使得他轻便，显示更加迅速。<br />
+<b>7.HTML5中canvas是什么？</b><br />
+Canvas是HTML中你可以绘制图形的区域。<br />
+<b>8.你能解释一些CSS3中的文本效果么？</b><br />
+这里面试官期待你回答两个Css的文本效果，以下是两种需要注意的效果。<br />
+<b>9.Web Worker线程的限制是什么？</b><br />
+Web worker线程不能修改HTML元素，全局变量和Window.Location一类的窗口属性。你可以自由使用JavaScript数据类型，XMLHttpRequest调用等。<br />
+<b>10.HTML5中的本地存储概念是什么？</b><br />
+很多时候我们会存储用户本地信息到电脑上，例如：比方说用户有一个填充了一半的长表格，然后突然网络连接断开了，这样用户希望你能存储这些信息到本地，当网络恢复的时候，他想获取这些信息然后发送到服务器进行存储
+现代浏览器拥有的存储被叫做“Local Storage”,你可以存储这些信息。<br />
+<b>11.我们如何从本地存储中添加和移除数据？</b><br />
+数据添加到本地存储采用键值对，以下示例显示了城市数据”India”添加了键”Key001”。<br />
+<b>12.本地存储的生命周期是什么？</b><br />
+本地存储没有生命周期，它将保留知道用户从浏览器清除或者使用Javascript代码移除。<br />
+<b>13.什么是事务存储？我们如何创建一个事务存储？</b><br />
+会话存储和本地存储类似，但是数据在会话中有效，简而言之数据在你关闭浏览器的时候就被删除了。
+为了创建一个会话存储你需要使用“sessionStorage.variablename.”在以下的代码我们创建了一个名为”clickcount”的变量；
+如果你刷新浏览器则数目增加，但是如果你关闭浏览器，“clickcount”变量又会从0开始。<br />
+if(sessionStorage.clickcount)<br />
+{<br />
+sessionStorage.clickcount=Number(sessionStorage.clickcount)+1;<br />
+}<br />
+else<br />
+{<br />
+sessionStorage.clickcount = 0;<br />
+}<br />
+<b>14.本地存储和事务存储之间的区别是什么？</b><br />
+本地存储数据持续永久，但是会话在浏览器打开时有效知道浏览器关闭时会话变量重置。<br />
+<b>15.什么是WebSQL？</b><br />
+WebSQL是一个在浏览器客户端的结构关系数据库，这是浏览器内的本地RDBMS(关系型数据库系统)，你可以使用SQL查询。<br />
+<b>16.WebSQL 是HTML5的一个规范吗？</b><br />
+不是，许多人把它标记为HTML5，但是他不是HTML5的规范的一部分，这个规范是基于SQLite的。<br />
+<b>17.HTML5中的应用缓存是什么？</b><br />
+一个最需要的事最终是用户的离线浏览，换句话说，如果网络连接不可用时，页面应该来自浏览器缓存，离线应用缓存可以帮助你达到这个目的
+应用缓存可以帮助你指定哪些文件需要缓存，哪些不需要。<br />
+<b>18.响应式布局用什么实现？</b><br />
+利用css3的media和query媒体查询功能或bootsrap框架。<br />
+<b>19.HTML5标准提供了哪些新的 API？ </b><br />
+ 多媒体：video、audio、游戏：canvas、webgl、<br />
+存储：localstorage、sessonstorage、websql、indexedDB<br />
+网络：websocket<br />
+<b>20.HTML5中什么是输出元素？</b><br />
+output：定义不同的输出类型。<br />
+<b>21.CSS3有哪些新特性？</b><br />
+CSS3实现圆角（border-radius），阴影（box-shadow），对文字加特效（text-shadow、），线性渐变（gradient），旋转（transform）
+transform:rotate(9deg) scale(0.85,0.90) translate(0px,-30px) skew(-9deg,0deg);// 旋转,缩放,定位,倾斜
+增加了更多的CSS选择器  多背景 rgba。在CSS3中唯一引入的伪元素是 :selection。
+</body>
+</html>

@@ -1,0 +1,371 @@
+/*更换主题*/
+.festival {
+	
+	margin-top: 20px;
+	text-decoration: none;
+}
+
+.le1 {
+	position: absolute;
+	margin-left: 210px;
+	margin-top: -40px;
+}
+
+.ri1 {
+	position: absolute;
+	margin-left: 900px;
+	margin-top: -40px;
+}
+
+.ri2 {
+	position: absolute;
+	margin-left: 1100px;
+	margin-top: 75px;
+}
+
+.commontheme {
+    display: inline-block;
+    position: relative;
+    width:20px;
+    height:30px;
+    box-shadow: 1px 1px 1px grey;
+    background-color: gray;
+    cursor: pointer;
+}
+/*绿色部分*/
+.green {
+    background-color: green;
+}
+/*红色部分*/
+.red {
+    background-color: red;
+}
+/*蓝色部分*/
+.blue {
+    background-color: blue;
+}
+/*灰色部分*/
+.grey {
+    background-color: grey;
+}
+/*橘色部分*/
+.orange {
+    background-color: orange;
+}
+/*粉色部分*/
+.pink {
+    background-color: pink;
+}
+
+.festival a {
+	text-decoration: none;
+	font: 15px arial;
+	color: gray;
+	padding-left: 15px;
+	transition: box-shadow 0;
+}
+
+.festival a:hover {
+	text-decoration: underline;
+	color: darkorange;
+	box-shadow: 1px 3px gray;
+}
+/*隔离线部分*/
+
+.line {
+	border: 0.4px solid gainsboro;
+	margin-top: -5px;
+}
+/*百度logo*/
+
+.blogo {
+	margin-left: 220px;
+	margin-top: 35px;
+	position: absolute;
+}
+/*文本框*/
+
+.text1 input {
+	width: 560px;
+	height: 40px;
+	position: absolute;
+	margin-left: 370px;
+	margin-top: 37px;
+	border: 0.5px solid gray;
+	font: 16px arial;
+}
+/*百度按钮*/
+
+.submit1 input {
+	width: 120px;
+	height: 40px;
+	position: absolute;
+	margin-left: 928px;
+	margin-top: 37px;
+	border: 0.5px solid gray;
+	font: 16px arial;
+}
+
+.submit1 input:hover {
+	border: 1px solid black;
+	font-weight: 200px;
+}
+/*热搜*/
+
+.topic {
+	margin-left: 380px;
+	margin-top: 85px;
+}
+
+.topic a {
+	text-decoration: none;
+	font: 15px arial;
+	color: gray;
+	padding-left: 15px;
+}
+
+.topic a:hover {
+	text-decoration: underline;
+	color: darkorange;
+}
+/*首页*/
+
+.hp {
+	width: 81px;
+	height: 37px;
+	background: #348841;
+	padding-top: 10px;
+	margin-left: 80px;
+	margin-top: 25px;
+}
+
+.hp a {
+	text-decoration: none;
+	font: 18px arial;
+	color: white;
+	padding-left: 20px;
+	font-size: 20px;
+	height: 37px;
+}
+/*绿线*/
+
+.gl {
+	width: 1080px;
+	border: 1px solid #348841;
+	margin-left: 160px;
+	margin-top: -47px;
+}
+/*新闻标题*/
+
+.new1 {
+	margin-left: 170px;
+	margin-top: 5px;
+}
+
+.new1 a {
+	text-decoration: none;
+	font: 20px arial bold;
+	color: #000000;
+	padding-left: 20px;
+	padding-top: 2px;
+}
+
+.new1 a:hover {
+	color: #389447;
+}
+/*首页下边框*/
+
+.box1 {
+	width: 1160px;
+	height: 37px;
+	border: 0.4px solid #59C06B;
+	margin-left: 80px;
+	margin-top: 15px;
+	border-top-color: gainsboro;
+	border-radius: 1px;
+	box-shadow: 5px;
+}
+/*权威推荐一行*/
+
+.new2 {
+	margin-left: 72px;
+	margin-top: -28px;
+}
+
+.new2 a {
+	text-decoration: none;
+	font: 17px arial;
+	color: black;
+	padding-left: 19.5px;
+}
+
+.new2 a:hover {
+	text-decoration: underline;
+	color: darkorange;
+}
+/*热搜标题*/
+
+.hot {
+	width: 290px;
+	height: 199px;
+	border: 1px solid gainsboro;
+	margin-top: -5px;
+	margin-left: 80px;
+	margin-top: 20px;
+}
+
+.grap {
+	float: left;
+	margin-left: 15px;
+}
+
+.grap a {
+	text-decoration: none;
+	font: 15px arial;
+	color: #000000;
+	padding-left: 2px;
+}
+
+.grap a:hover {
+	color: darkorange;
+	text-decoration: underline;
+}
+/*热搜网站*/
+
+.hot1 {
+	position: absolute;
+	width: 852px;
+	height: 285px;
+	border: 1px solid #59C06B;
+	margin-left: 387px;
+	margin-top: -200px;
+}
+
+.hot1 a {
+	text-decoration: none;
+	font: 15px arial;
+	color: #000000;
+	margin-top:5px;
+	
+}
+
+.hot1 a:hover {
+	color: darkorange;
+}
+
+.hot2 {
+	position: absolute;
+}
+
+.hot2 img {
+	margin-top: 15px;
+	margin-left: 80px;
+}
+
+.part1 {
+	margin-top: 5px;
+	margin-left: 20px;
+}
+
+.part1 a {
+	padding-top: 10px;
+	padding-left: 0px;
+}
+
+.hot1 a:hover {
+	color: darkorange;
+}
+
+.part1 {
+	margin-top: 10px;
+	margin-left: 45px;
+}
+
+.part1 a {
+	padding-top: 10px;
+	padding-left: 5px;
+}
+
+.part2 {
+	margin-top: 10px;
+	margin-left: 45px;
+}
+
+.part2 a {
+	padding-top: 10px;
+	padding-left: 5px;
+}
+
+.part3 {
+	margin-top: 10px;
+	margin-left: 45px;
+}
+
+.part3 a {
+	padding-top: 10px;
+	padding-left: 5px;
+}
+
+.part4 {
+	margin-top: 10px;
+	margin-left: 45px;
+}
+
+.part4 a {
+	padding-top: 10px;
+	padding-left: 5px;
+}
+
+.part5 {
+	margin-top: 10px;
+	margin-left: 45px;
+}
+
+.part5 a {
+	padding-top: 10px;
+	padding-left: 5px;
+}
+
+.part6 {
+	margin-top: 10px;
+	margin-left: 45px;
+}
+
+.part6 a {
+	padding-top: 10px;
+	padding-left: 5px;
+}
+
+.part7 {
+	margin-top: 10px;
+	margin-left: 45px;
+}
+
+.part7 a {
+	padding-top: 10px;
+	padding-left: 5px;
+}
+
+.part8 {
+	margin-top: 10px;
+	margin-left: 45px;
+}
+
+.part8 a {
+	padding-top: 10px;
+	padding-left: 5px;
+}
+.hot3{
+	margin-top:105px ;
+	margin-left:406px ;
+}
+.hot3 a {
+	text-decoration: none;
+	font: 13.4px arial;
+	color: #0C72A5;
+	padding-left: 11px;
+	transition: box-shadow 0;
+}
+.hot3 a:hover {
+	text-decoration:underline;
+}

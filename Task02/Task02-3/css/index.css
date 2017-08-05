@@ -1,0 +1,138 @@
+﻿body {
+	font: 12px arial;
+}
+html,body{
+	height:100%;
+}
+.wrapper{
+	height:100%;
+	min-width:810px;
+	min-height:600px;
+	position:relative;
+}
+header {
+	overflow: hidden;
+}
+
+header nav {
+	widrh:500px;
+	float: right;
+}
+
+header nav a 
+{
+	margin-left: 15px;
+}
+
+a{color:gray} /*设置默认颜色*/
+
+/*主体部分*/
+
+.saoma1 {
+	width:100%;
+	text-align: center;
+}
+
+.content {
+	text-align: center;
+}
+form{
+	width:587px;
+	margin:10px auto;
+	position:relative;
+}
+
+/*通用输入框样式*/
+
+.content input {
+	width: 450px;
+	height: 34px;
+	float:left;
+	
+}
+
+
+/*自定义按钮样式*/
+
+.ccbtn {
+	cursor: pointer;
+	width: 102px !important;
+	height: 40px !important;
+	line-height: 38px;
+	margin-left: -4px;
+	border: 0;
+	background: none;
+	background-color: #38f;
+	font-size: 16px;
+	color: white;
+	box-shadow: none;
+}
+
+.navnormal {
+	float: right;
+	height: 30px;
+	margin-top: 8px;
+	margin-right: 5px;
+}
+
+.navmore {
+	width: 80px;
+	height: 30px;
+	background-color: #38f;
+	text-align: center;
+	float: right;
+}
+
+.navmore:hover {
+	width: 80px;
+	height: 30px;
+	background-color: white;
+	text-align: center;
+	float: right;
+}
+
+.navmore:hover a {
+	color: black;
+	text-decoration: none;
+	margin-left: 0px;
+}
+
+.navmore div {
+	padding-top: 8px;
+}
+
+.navmore a {
+	color: white;
+	text-decoration: none;
+	margin-left: 0px;
+}
+
+
+/*底部信息*/
+
+.footer {
+	text-align: center;
+	width: 100%;
+	height: 50px;
+	position:absolute;
+	bottom: 50px;
+}
+
+.div-bor {
+	position: relative;
+}
+
+.icon-camaro {
+	position: absolute;
+	background-image: url(../img/camaro.png);
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+	right:108px;
+    top:10px;
+	outline:0px;	
+}
+
+.camaro {
+	padding-right: 30px;
+}
